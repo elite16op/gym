@@ -14,7 +14,7 @@ const Benefits = (props: Props) => {
         </i>
       </div>
       <div className="lg:flex lg:justify-between lg:gap-x-6">
-        <div className="mx-auto my-8 rounded-md border border-black px-12 py-5 text-center w-[400px]">
+        <div className="mx-auto my-8 rounded-md border border-black px-12 py-5 text-center w-[85%] lg:w-[400px]">
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Benefits = (props: Props) => {
             accountable for your fitness routine.
           </i>
         </div>
-        <div className="mx-auto my-8 w-[380px] rounded-md border border-black px-12 py-5 text-center">
+        <div className="mx-auto my-8 w-[85%] lg:w-[400px] rounded-md border border-black px-12 py-5 text-center">
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const Benefits = (props: Props) => {
             journey and grow together.
           </i>
         </div>
-        <div className="mx-auto my-8 w-[380px] rounded-md border border-black px-12 py-5 text-center">
+        <div className="mx-auto my-8 w-[85%] lg:w-[400px] rounded-md border border-black px-12 py-5 text-center">
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
