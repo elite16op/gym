@@ -7,7 +7,7 @@ const Hero = (props: Props) => {
   return (
     <div className='w-[85%] mx-auto px-4'>
         <div className='lg:flex lg:justify-between hero'>
-            <div className='text-left w-[45%]'>
+            <div className='text-left lg:w-[45%]'>
                 <i className='text-5xl color font-bold block'>SweatLab</i>
                 <i className='text-xl block'>evolutionary fitness</i>
                 <i className='w-[90%] inline-block mt-4 text-[0.92rem] lg:mt-8 lg:text-base'>Welcome to our state-of-the-art gym, where fitness meets innovation, provide you with an exhilarating workout experience. </i>
