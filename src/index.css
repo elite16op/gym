@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: "#E9FFEE";
+}
+
+i {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    margin: 10px 20px;
+}
+
+.color {
+    color: #099522;
+}
+
+.btn {
+    background-color: #099522;
+    color: white;
+    border: 0;
+}
+
