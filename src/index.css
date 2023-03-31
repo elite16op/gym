@@ -27,3 +27,9 @@ li {
     border: 0;
 }
 
+@media screen and (min-width: 1024px) {
+    .hero {
+        align-items: center;
+    }
+  }
+  
