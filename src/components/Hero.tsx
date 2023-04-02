@@ -12,8 +12,8 @@ const Hero = (props: Props) => {
                 <i className='text-xl block'>evolutionary fitness</i>
                 <i className='w-[90%] inline-block mt-4 text-[0.92rem] lg:mt-8 lg:text-base'>Welcome to our state-of-the-art gym, where fitness meets innovation, provide you with an exhilarating workout experience. </i>
                 <div className='flex gap-x-4 mt-4 lg:mt-8'>
-                    <button className='border border-black px-2 py-1 rounded-md btn'>Join now</button>
-                    <button className='border border-black px-2 py-1 rounded-md color'>Learn more</button>
+                    <button className='border border-black px-2 py-1 rounded-md btn font'>Join now</button>
+                    <button className='border border-black px-2 py-1 rounded-md color font'>Learn more</button>
                 </div>
             </div>
             <div className='mt-7'>

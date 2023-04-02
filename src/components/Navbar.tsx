@@ -33,19 +33,19 @@ const Navbar = (props: Props) => {
         }}
       >
         <div className="">
-          <i className="text-lg font-medium color">SweatLab</i>
+          <i className="text-lg font-medium color cursor-pointer">SweatLab</i>
         </div>
         <div className="hidden gap-x-4 lg:flex">
-          <i className={`text-[0.93rem] ${(select==="home"?"color":"")}`}>Home</i>
-          <i className={`text-[0.93rem] ${(select==="benefits"?"color":"")}`}>Benefits</i>
-          <i className={`text-[0.93rem] ${(select==="ourClasses"?"color":"")}`}>Our Classes</i>
-          <i className={`text-[0.93rem] ${(select==="contactUs"?"color":"")}`}>Contact Us</i>
+          <i className={`text-[0.93rem] cursor-pointer ${(select==="home"?"color":"")}`}>Home</i>
+          <i className={`text-[0.93rem] cursor-pointer ${(select==="benefits"?"color":"")}`}>Benefits</i>
+          <i className={`text-[0.93rem] cursor-pointer ${(select==="ourClasses"?"color":"")}`}>Our Classes</i>
+          <i className={`text-[0.93rem] cursor-pointer ${(select==="contactUs"?"color":"")}`}>Contact Us</i>
         </div>
         <div className="hidden gap-x-4 lg:flex">
-          <div className="inline-block rounded-md border border-black px-3 py-1">
+          <div className="inline-block rounded-md border border-black px-3 py-1 cursor-pointer">
             <i className="font-medium color">Sign in</i>
           </div>
-          <div className="inline-block rounded-md border border-black px-3 py-1 btn">
+          <div className="inline-block rounded-md border border-black px-3 py-1 btn cursor-pointer">
             <i className="font-medium">Become a member</i>
           </div>
         </div>
@@ -76,17 +76,17 @@ const Navbar = (props: Props) => {
       >
         <ul className="">
           <li className=""></li>
-          <li className={`${(select==="home"?"color":"")}`}>Home</li>
-          <li className={`${(select==="benefits"?"color":"")}`}>Our Classes</li>
-          <li className={`${(select==="ourClasses"?"color":"")}`}>Benefits</li>
-          <li className={`${(select==="contactUs"?"color":"")}`}>Contact Us</li>
+          <li className={`cursor-pointer ${(select==="home"?"color":"")}`}>Home</li>
+          <li className={`cursor-pointer ${(select==="benefits"?"color":"")}`}>Our Classes</li>
+          <li className={`cursor-pointer ${(select==="ourClasses"?"color":"")}`}>Benefits</li>
+          <li className={`cursor-pointer ${(select==="contactUs"?"color":"")}`}>Contact Us</li>
           <li className="mt-10">
-            <div className="inline-block rounded-md border border-black px-3 py-1">
+            <div className="inline-block rounded-md border border-black px-3 py-1 cursor-pointer">
               <i className="font-medium color">Sign in</i>
             </div>
           </li>
           <li>
-            <div className="inline-block rounded-md border border-black px-3 py-1 btn">
+            <div className="inline-block rounded-md border border-black px-3 py-1 btn cursor-pointer">
               <i className="font-medium">Become a member</i>
             </div>
           </li>

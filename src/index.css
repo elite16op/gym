@@ -21,11 +21,16 @@ li {
     color: #099522;
 }
 
+.bg {
+    background-color: #099522;
+}
+
 .btn {
     background-color: #099522;
     color: white;
     border: 0;
 }
+
 
 @media screen and (min-width: 1024px) {
     .hero {

@@ -4,7 +4,7 @@ type Props = {};
 
 const Benefits = (props: Props) => {
   return (
-    <div className="mx-auto mt-14 w-[85%] px-4">
+    <div className="mx-auto my-14 w-[85%] px-4">
       <div className="mx-auto w-[85%] text-center lg:w-[550px]">
         <i className="color block text-4xl font-bold">MORE THAN JUST GYM</i>
         <i className="mt-4 block text-[0.92rem]">
@@ -14,7 +14,7 @@ const Benefits = (props: Props) => {
         </i>
       </div>
       <div className="lg:flex lg:justify-between lg:gap-x-6">
-        <div className="mx-auto my-8 rounded-md border border-black px-12 py-5 text-center w-[85%] lg:w-[400px]">
+        <div className="mx-auto my-8 rounded-md border border-black px-6 py-5 text-center w-[90%] lg:w-[400px]">
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Benefits = (props: Props) => {
             accountable for your fitness routine.
           </i>
         </div>
-        <div className="mx-auto my-8 w-[85%] lg:w-[400px] rounded-md border border-black px-12 py-5 text-center">
+        <div className="mx-auto my-8 w-[90%] lg:w-[400px] rounded-md border border-black px-6 py-5 text-center">
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const Benefits = (props: Props) => {
             journey and grow together.
           </i>
         </div>
-        <div className="mx-auto my-8 w-[85%] lg:w-[400px] rounded-md border border-black px-12 py-5 text-center">
+        <div className="mx-auto my-8 w-[90%] lg:w-[400px] rounded-md border border-black px-6 py-5 text-center">
           <div className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
