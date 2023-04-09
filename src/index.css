@@ -24,11 +24,18 @@ li {
 .bg {
     background-color: #099522;
 }
+.bglite {
+    background-color: #EBFEEF;
+}
 
 .btn {
     background-color: #099522;
     color: white;
     border: 0;
+}
+
+.boutline {
+    border: #099522 1px solid;
 }
 
 
@@ -38,3 +45,7 @@ li {
     }
   }
   
+
+.email::placeholder {
+    color: white;
+}

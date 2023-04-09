@@ -24,8 +24,6 @@ const OurClasses = (props: Props) => {
         <Swiper
           spaceBetween={50}
           slidesPerView={(window.innerWidth>1024)? 3 : 1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <div className="">

@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import Home from './pages/Home'
+import Register from './auth/Register'
+import {Outlet} from 'react-router-dom'
 
 
 function App() {
 
   return (
     <div className="">
-      <Home />
+      <Outlet />
     </div>
   )
 }
