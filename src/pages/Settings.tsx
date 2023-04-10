@@ -20,8 +20,6 @@ const Settings = (props: Props) => {
       navigate("/");
     }
     const id = Cookies.get("id");
-    const u = retrieveUser();
-    setUser(u);
   },[]);
 
   

@@ -5,6 +5,8 @@ import { initializeConnect } from "react-redux/es/components/connect";
 // initial state here
 const signModal : object = {
     show : false,
+    top : 0,
+    left : 0,
 }
 
 const user : object = {
@@ -16,6 +18,10 @@ const posi : object = {
     at : ""
 }
 
+const dash : object = {
+    at : "exer"
+}
+
 
 // slices here
 const openSign = createSlice({
@@ -23,7 +29,7 @@ const openSign = createSlice({
     initialState : signModal,
     reducers : {
         showS : (initialState, e)=>{
-            return {...initialState, show:e.payload}
+            return {...initialState, show:e.payload.show, top:e.payload.top, left:e.payload.left}
         }
     }
 })
@@ -48,11 +54,22 @@ const scrollAt = createSlice({
     }
 })
 
+const dashAt = createSlice({
+    name : "dashboard",
+    initialState : dash,
+    reducers : {
+        save : (initialState, e)=>{
+            return {...initialState, at:e.payload}
+        }
+    }
+})
+
 
 // action here
 export const {showS} = openSign.actions;
 export const {saveId} = id.actions;
 export const {goAt} = scrollAt.actions;
+export const {save} = dashAt.actions;
 
 
 
@@ -62,6 +79,7 @@ export const store = configureStore({
         sign : openSign.reducer,
         id : id.reducer,
         scrollAt : scrollAt.reducer,
+        dashAt : dashAt.reducer,
     }
 })
 

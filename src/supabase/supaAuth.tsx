@@ -1,5 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, redirect } from "react-router-dom";
 import { store, saveId } from "../store/Store";
 import Cookies from "js-cookie";
 import { dbStore } from "./supaDb";
@@ -23,8 +23,6 @@ export async function signUpWithEmail(email: string, password: string) {
   });
   const id:string|undefined = data.user?.id;
   Cookies.set("id",id?id:"");
-  const uid = Cookies.get("id");
-  window.location.href=window.location.origin+`/${uid}/exc`;
 }
 
 
@@ -35,8 +33,6 @@ export async function signInWithGoogle() {
   })  
     const uuid = uniqid();
     Cookies.set("id",uuid);
-    const uid = Cookies.get("id");
-    window.location.href=window.location.origin+`/${uid}/exc`
 }
 
 
@@ -76,7 +72,7 @@ export async function deleteUser(id:string) {
 // change account password 
 export async function changePass(email:string) {
   const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-    redirectTo: window.location.origin,  
+    redirectTo: "/",  
   })
 }
 

@@ -8,11 +8,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { checksigninCookie } from './supabase/supaAuth'
 import User from './pages/User'
 import Home from './pages/Home'
 import Settings from './pages/Settings'
-import { checkAuth } from './supabase/urlCond'
 
 
 const router = createBrowserRouter([

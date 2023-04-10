@@ -94,7 +94,17 @@ const Navbar = (props: Props) => {
         </div>
         <div className="hidden gap-x-4 lg:flex">
           <div className="inline-block rounded-md border border-black px-3 py-1 cursor-pointer" onClick={()=>{
-            dispatch(showS(true));
+            const modalWidth = 400; // adjust as needed
+            const modalHeight = 320; // adjust as needed
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+            const top = (viewportHeight - modalHeight) / 2;
+            const left = (viewportWidth - modalWidth) / 2;
+            dispatch(showS({
+              show : true,
+              top : top,
+              left : left,
+            }))
           }}>
             <i className="font-medium color">Sign in</i>
           </div>
@@ -179,7 +189,17 @@ const Navbar = (props: Props) => {
             }}>Contact Us</li>
           <li className="mt-10">
             <div className="inline-block rounded-md border border-black px-3 py-1 cursor-pointer" onClick={()=>{
-              dispatch(showS(true))
+              const modalWidth = 400; // adjust as needed
+              const modalHeight = 320; // adjust as needed
+              const viewportWidth = window.innerWidth;
+              const viewportHeight = window.innerHeight;
+              const top = (viewportHeight - modalHeight) / 2;
+              const left = (viewportWidth - modalWidth) / 2;
+              dispatch(showS({
+                show : true,
+                top : top,
+                left : left,
+              }))
             }}>
               <i className="font-medium color">Sign in</i>
             </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDispatch } from "react-redux/es/hooks/useDispatch";
-import { showS } from "../store/Store";
+import { showS, save } from "../store/Store";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 
@@ -55,11 +55,16 @@ const NavDash = (props: Props) => {
         <div className="hidden gap-x-4 lg:flex">
           <i className={`text-[0.93rem] cursor-pointer ${(select==="exercises"?"color":"")}`} onClick={()=>{
             setSelect("exercise");
+            dispatch(save("exer"));
             navigate(`/${id}/exc`);
             }}>Exercises</i>
-          <i className={`text-[0.93rem] cursor-pointer ${(select==="courses"?"color":"")}`} onClick={()=>{setSelect("courses")}}>Courses</i>
+          <i className={`text-[0.93rem] cursor-pointer ${(select==="courses"?"color":"")}`} onClick={()=>{
+            setSelect("courses")
+            dispatch(save("cour"));
+            }}>Courses</i>
           <i className={`text-[0.93rem] cursor-pointer ${(select==="account"?"color":"")}`} onClick={()=>{
             setSelect("account")
+            dispatch(save("acc"));
             navigate(`/${id}/acc`);
             }}>Account</i>
         </div>
@@ -99,14 +104,16 @@ const NavDash = (props: Props) => {
           </li>
           <li className={`cursor-pointer ${(select==="exercises"?"color":"")}`} onClick={()=>{
             setSelect("exercise")
+            dispatch(save("exer"));
             navigate(`/${id}/exc`);
             }}>Exercises</li>
           <li className={`cursor-pointer ${(select==="courses"?"color":"")}`} onClick={()=>{
             setSelect("courses")
-            navigate(`/${id}/exc`);
+            dispatch(save("cour")); 
             }}>Courses</li>
           <li className={`cursor-pointer ${(select==="account"?"color":"")}`} onClick={()=>{
             setSelect("account")
+            dispatch(save("acc"));
             navigate(`/${id}/acc`);
             }}>Account</li>
         </ul>
